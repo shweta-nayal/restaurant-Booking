@@ -1,0 +1,78 @@
+/* globals.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* globals.css */
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #3a8582,
+    #579ab4
+  ); /* Pastel gradient background */
+  color: #fff;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle text shadow for depth */
+}
+
+button {
+  background-color: #ffffff;
+  color: #4e8c8a;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px; /* Rounded button */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for button */
+}
+
+button:hover {
+  background-color: #0e6966;
+  color: white;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Button shadow effect */
+}
+
+button:focus {
+  outline: none; /* Remove default focus outline */
+}

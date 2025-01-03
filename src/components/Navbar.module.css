@@ -1,0 +1,101 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #175f5e; /* Pastel greenish-blue color */
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar .logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.navbar .links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-radius: 30px;
+  transition: background 0.3s ease;
+}
+
+.navbar .links a:hover {
+  background-color: #3ebeaf; /* Slightly darker shade on hover */
+}
+
+.navbar .loginIcon {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.navbar .hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1001;
+}
+
+.navbar .hamburger span {
+  color: white;
+}
+
+.navbar .links.active {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navbar .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #4e8c8a;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .navbar .hamburger {
+    display: block;
+  }
+
+  .navbar .links a {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .navbar .links.active {
+    display: flex;
+  }
+
+  .navbar .hamburger span {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .navbar .hamburger span.open {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+}
